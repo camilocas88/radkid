@@ -3,7 +3,250 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css" />
+		<link rel="stylesheet" href="/sass/style.css" />
+		<title>Radkid</title>
 	</head>
-	<body></body>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-rad">
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/rad_ico.svg" alt="" width="30" height="24" />
+				</a>
+				<ul class="d-flex mb-0 pl0">
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Protectores</a>
+					</li>
+
+					<li><div class="line"></div></li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Instalación</a>
+					</li>
+					<li><div class="line"></div></li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#" tabindex="-1">Comprar</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div id="splide" class="splide">
+				<div class="splide__track">
+					<ul class="splide__list">
+						<li class="splide__slide" data-splide-vimeo="https://vimeo.com/186240055">
+							<div class="box__blue"></div>
+							<img src="./assets/home_banner1.jpg" />
+							<div class="box__slide__one">
+								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
+								<h1>
+									One Wrap <br />
+									fits all.
+								</h1>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad magnam perspiciatis incidunt quibusdam odit, facilis reiciendis
+									accusantium iure dolore voluptatem quos.
+								</p>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<img src="./assets/home_banner2.jpg" />
+						</li>
+						<li class="splide__slide" data-splide-vimeo="https://vimeo.com/215334213">
+							<img src="./assets/home_banner3.jpg" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<section class="bg__dark desktop">
+			<div class="second__info">
+				<img src="./assets/2nd_generation.svg" alt="segunda generacion" />
+				<p>
+					Pensamos en cada detalle para que la protección de tu bici sea más óptima, WrapiK® tiene un desarrollo de materiales y diseño que hacen de
+					esta protección un elemento infaltable cuando quieras proteger el frente del cuadro, suspenciones y tijera.
+				</p>
+				<p>Dos versiones de Wrap para proteger.</p>
+			</div>
+			<div class="second"></div>
+		</section>
+
+		<section class="mobile">
+			<div class="second"></div>
+			<div class="bg__dark">
+				<div class="second__info">
+					<img class="number2" src="./assets/2nd_generation.svg" alt="segunda generacion" />
+					<p>
+						Pensamos en cada detalle para que la protección de tu bici sea más óptima, WrapiK® tiene un desarrollo de materiales y diseño que hacen de
+						esta protección un elemento infaltable cuando quieras proteger el frente del cuadro, suspenciones y tijera.
+					</p>
+					<br />
+					<p>Dos versiones de Wrap para proteger.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="bg__dark desktop">
+			<div class="third"></div>
+			<div class="third__info">
+				<h2>
+					Dual <span></span> <br />
+					function
+				</h2>
+				<p>
+					WrapKit® Plus® está diseñadp para adptarse al frente de tu marco y al cuadro de la tijera por lo que un wrap te da doble funcionalidad en el
+					momento que las condiciones de carga lo necesiten.
+				</p>
+			</div>
+		</section>
+
+		<section class="mobile">
+			<div class="third"></div>
+			<div class="third__info">
+				<h2>
+					Dual <span></span> <br />
+					function
+				</h2>
+				<p>
+					WrapKit® Plus® está diseñadp para adptarse al frente de tu marco y al cuadro de la tijera por lo que un wrap te da doble funcionalidad en el
+					momento que las condiciones de carga lo necesiten.
+				</p>
+			</div>
+		</section>
+
+		<section class="bg__dark desktop">
+			<div class="third__info third__info__ride">
+				<h2>
+					Poly <span></span> <br />
+					valence
+				</h2>
+				<p>
+					Diseñamos un producto que tiene fácil adaptibilidad, los straps de la versión Plus® están pensados para adptarse a cualquier modelo de
+					bicicleta lo cual lo hace un elemento infaltable a la hora de salir a montar ua sea ina bici de ruta, bmx, cross country, gravel, enduro,
+					downhill o incluso una E-bike.
+				</p>
+
+				<a href="http://google.com.co" class="button button__red" role="button">Comprar + Plus</a>
+			</div>
+			<div class="second second__ride"></div>
+		</section>
+
+		<section class="mobile">
+			<div class="third third__ride"></div>
+			<div class="third__info">
+				<h2>
+					Poly <span></span> <br />
+					valence
+				</h2>
+				<p>
+					Diseñamos un producto que tiene fácil adaptibilidad, los straps de la versión Plus® están pensados para adptarse a cualquier modelo de
+					bicicleta lo cual lo hace un elemento infaltable a la hora de salir a montar ua sea ina bici de ruta, bmx, cross country, gravel, enduro,
+					downhill o incluso una E-bike.
+				</p>
+				<a href="http://google.com.co" class="button button__red" role="button">Comprar + Plus</a>
+			</div>
+		</section>
+
+		<section class="bg__dark desktop">
+			<div class="third third__zero"></div>
+			<div class="third__info">
+				<h2>
+					Zero <span></span> <br />
+					scratches
+				</h2>
+				<p>
+					En su versión Baser® el Wrap garantiza la protección de las barras de suspensión y tenedore, cubriendo las botellas y la sección de las
+					barras que quedan expuestas para que evites el roce directo con una superficie o con elementos que puedan afectarla.
+				</p>
+				<a href="http://google.com.co" class="button button__red" role="button">Comprar Base</a>
+			</div>
+		</section>
+
+		<section class="mobile">
+			<div class="third third__zero"></div>
+			<div class="third__info">
+				<h2>
+					Zero <span></span> <br />
+					scratches
+				</h2>
+				<p>
+					En su versión Baser® el Wrap garantiza la protección de las barras de suspensión y tenedore, cubriendo las botellas y la sección de las
+					barras que quedan expuestas para que evites el roce directo con una superficie o con elementos que puedan afectarla.
+				</p>
+				<a href="http://google.com.co" class="button button__red" role="button">Comprar Base</a>
+			</div>
+		</section>
+
+		<div class="separator dark text-white">
+			<div class="container">
+				<div class="row">
+					<div class="col desktop">+Color + protection &nbsp; ->&nbsp; <span> WK / RD KD &nbsp; </span>&nbsp;-> +Color + protection</div>
+					<div class="col desktop">+Color + protection &nbsp;->&nbsp; <span> WK / RD KD &nbsp; </span>&nbsp;-> +Color + protection</div>
+					<div class="col desktop">+Color + protection &nbsp; ->&nbsp; <span> WK / RD KD &nbsp; </span>&nbsp;-> +Color + protection</div>
+					<div class="col mobile text-center">+Color + protection &nbsp; ->&nbsp; <span> WK / RD KD &nbsp; </span>&nbsp;-> +Color + protection</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dark text-white">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col border border-light d-flex center column p-5">
+						<div class="colors colors__1 mb-2"></div>
+						<p class="mb-0 color">Color</p>
+						<p class="number">01</p>
+					</div>
+					<div class="col border border-light d-flex center column p-5">
+						<div class="colors colors__2 mb-2"></div>
+						<p class="mb-0 color">Color</p>
+						<p class="number">02</p>
+					</div>
+					<div class="col border border-light d-flex center column p-5">
+						<div class="colors colors__3 mb-2"></div>
+						<p class="mb-0 color">Color</p>
+						<p class="number">03</p>
+					</div>
+					<div class="col border border-light d-flex center column p-5">
+						<div class="colors colors__4 mb-2"></div>
+						<p class="mb-0 color">Color</p>
+						<p class="number">04</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dark text-white footer desktop">
+			<div class="container">
+				<div class="row">
+					<div class="col-2 d-flex footer__col1">
+						<img src="./assets/logo_footer.svg" alt="logo" />
+						<div class="footerhash">
+							<span>#</span>
+							<p>Hot line</p>
+							<p>ever fella</p>
+						</div>
+					</div>
+					<div class="col-8 border-botom"></div>
+					<div class="col-2"><img src="./assets/footer_brand.png" alt="footer-image" /></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@latest/dist/css/splide-extension-video.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-video@latest/dist/js/splide-extension-video.min.js"></script>
+		<script>
+			new Splide('#splide').mount(window.splide.Extensions);
+		</script>
+		<script src="./js/carousel.js"></script>
+	</body>
 </html>
