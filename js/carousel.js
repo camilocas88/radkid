@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-	new Splide('#splide', {
+	var splide = new Splide('#splide', {
 		type: 'loop',
 		focus: 'center',
 		autoplay: false,
@@ -19,6 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 		video: {
 			autoplay: true,
 			mute: true,
+			disableOverlayUI: true,
+			hideControls: false,
 		},
 	}).mount();
+	splide.on('video play', function () {
+		console.log('asdasdasdasdasdas');
+	});
+	splide.on('moved', function () {
+		console.log('Se movio');
+	});
 });

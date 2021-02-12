@@ -42,9 +42,16 @@
 			<div id="splide" class="splide">
 				<div class="splide__track">
 					<ul class="splide__list">
-						<li class="splide__slide" data-splide-vimeo="https://vimeo.com/186240055">
+						<li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU">
 							<div class="box__blue"></div>
-							<img src="./assets/home_banner1.jpg" />
+							<img
+								srcset="./assets/content_2.jpg 320w, ./assets/content_2.jpg 480w, ./assets/home_banner1.jpg 800w"
+								sizes="(max-width: 480px) 440px,
+                          800px"
+								src="./assets/home_banner1.jpg"
+								alt="banner 1"
+							/>
+
 							<div class="box__slide__one">
 								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
 								<h1>
@@ -70,12 +77,42 @@
 
 		<section class="bg__dark desktop">
 			<div class="second__info">
-				<img src="./assets/2nd_generation.svg" alt="segunda generacion" />
+				<img src="./assets/2nd_generation.png" alt="segunda generacion" />
 				<p>
 					Pensamos en cada detalle para que la protección de tu bici sea más óptima, WrapiK® tiene un desarrollo de materiales y diseño que hacen de
 					esta protección un elemento infaltable cuando quieras proteger el frente del cuadro, suspenciones y tijera.
 				</p>
 				<p>Dos versiones de Wrap para proteger.</p>
+				<div style="margin-top: 3rem" class="grid-container">
+					<div class="left">
+						<a style="text-align: center" href="#section3"><img src="./assets/logo_base.svg" alt="base" /> </a>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<div class="mt-4">
+							<ul>
+								<li>Suspenciones</li>
+								<li>Botellas</li>
+							</ul>
+						</div>
+					</div>
+					<div class="right">
+						<a style="text-align: center" href="#section4">
+							<img src="./assets/logo_plus.svg" alt="base" />
+						</a>
+						<br />
+						<br />
+
+						<div class="mt-4">
+							<ul>
+								<li>Marco frontal</li>
+								<li>Tijera</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="second"></div>
 		</section>
@@ -95,7 +132,7 @@
 			</div>
 		</section>
 
-		<section class="bg__dark desktop">
+		<section id="section3" class="bg__dark desktop">
 			<div class="third"></div>
 			<div class="third__info">
 				<h2>
@@ -156,7 +193,7 @@
 			</div>
 		</section>
 
-		<section class="bg__dark desktop">
+		<section id="section4" class="bg__dark desktop">
 			<div class="third third__zero"></div>
 			<div class="third__info">
 				<h2>
