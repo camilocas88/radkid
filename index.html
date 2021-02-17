@@ -11,6 +11,8 @@
 		/>
 		<link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css" />
 		<link rel="stylesheet" href="/sass/style.css" />
+		<link rel="icon" type="image/png" href="/assets/rad_ico.png" sizes="16x16" />
+
 		<title>Radkid</title>
 	</head>
 	<body>
@@ -22,14 +24,14 @@
 				</a>
 				<ul class="d-flex mb-0 pl0">
 					<li class="nav-item">
-						<a class="nav-link" href="#" tabindex="-1">Protectores</a>
+						<a class="nav-link" href="#section2" tabindex="-1">Protectores</a>
 					</li>
 
 					<li><div class="line"></div></li>
-					<li class="nav-item">
+					<!-- <li class="nav-item">
 						<a class="nav-link" href="#" tabindex="-1">Instalación</a>
-					</li>
-					<li><div class="line"></div></li>
+					</li> -->
+					<!-- <li><div class="line"></div></li> -->
 
 					<li class="nav-item">
 						<a class="nav-link" href="#" tabindex="-1">Comprar</a>
@@ -44,15 +46,10 @@
 					<ul class="splide__list">
 						<li class="splide__slide" data-splide-youtube="https://www.youtube.com/watch?v=cdz__ojQOuU">
 							<div class="box__blue"></div>
-							<img
-								srcset="./assets/content_2.jpg 320w, ./assets/content_2.jpg 480w, ./assets/home_banner1.jpg 800w"
-								sizes="(max-width: 480px) 440px,
-                          800px"
-								src="./assets/home_banner1.jpg"
-								alt="banner 1"
-							/>
+							<img class="desktop" src="./assets/banners_home_1.jpg" alt="banner 1" />
+							<img class="mobile" src="./assets/banners_home_mobile_1.jpg" alt="banner 1" />
 
-							<div class="box__slide__one">
+							<div class="box__slide box__slide__one">
 								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
 								<h1>
 									One Wrap <br />
@@ -65,18 +62,69 @@
 							</div>
 						</li>
 						<li class="splide__slide">
-							<img src="./assets/home_banner2.jpg" />
+							<div class="box__blue"></div>
+							<img class="desktop" src="./assets/banners_home_2.jpg" alt="banner 2" />
+							<img class="mobile" src="./assets/banners_home_mobile_2.jpg" alt="banner 2" />
+							<div class="box__slide box__slide__two">
+								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
+								<h1>
+									Dual <span>®</span> <br />
+									fuction
+								</h1>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad magnam perspiciatis incidunt quibusdam odit, facilis reiciendis
+									accusantium iure dolore voluptatem quos.
+								</p>
+							</div>
 						</li>
-						<li class="splide__slide" data-splide-vimeo="https://vimeo.com/215334213">
-							<img src="./assets/home_banner3.jpg" />
+						<li class="splide__slide">
+							<div class="box__blue"></div>
+							<img class="desktop" src="./assets/banners_home_3.jpg" alt="banner 3" />
+							<img class="mobile" src="./assets/banners_home_mobile_3.jpg" alt="banner 3" />
+							<div class="box__slide box__slide__three">
+								<h1>
+									<strong class="red">Triple</strong>
+									<br />
+									protection.
+								</h1>
+
+								<div>
+									<ul>
+										<li><span class="list">1</span> PVC injected</li>
+										<li><span class="list">2</span> Mid densithy Foam</li>
+										<li><span class="list">3</span> Poly plate</li>
+									</ul>
+								</div>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad magnam perspiciatis incidunt quibusdam odit, facilis reiciendis
+									accusantium iure dolore voluptatem quos.
+								</p>
+								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
+							</div>
+						</li>
+						<li class="splide__slide">
+							<div class="box__blue"></div>
+							<img class="desktop" src="./assets/banners_home_4.jpg" alt="banner 4" />
+							<img class="mobile" src="./assets/banners_home_mobile_4.jpg" alt="banner 4" />
+							<div class="box__slide box__slide__four">
+								<h1>
+									Design <br />
+									Color Full<span>®</span>
+								</h1>
+								<p>
+									Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad magnam perspiciatis incidunt quibusdam odit, facilis reiciendis
+									accusantium iure dolore voluptatem quos.
+								</p>
+								<a href="http://google.com.co" class="button button__red" role="button">-Wrap it</a>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</main>
 
-		<section class="bg__dark desktop">
-			<div class="second__info">
+		<section id="section2" class="bg__dark desktop">
+			<div class="second__info container">
 				<img src="./assets/2nd_generation.png" alt="segunda generacion" />
 				<p>
 					Pensamos en cada detalle para que la protección de tu bici sea más óptima, WrapiK® tiene un desarrollo de materiales y diseño que hacen de
@@ -121,13 +169,43 @@
 			<div class="second"></div>
 			<div class="bg__dark">
 				<div class="second__info">
-					<img class="number2" src="./assets/2nd_generation.svg" alt="segunda generacion" />
+					<img class="number2" src="./assets/2nd_generation.png" alt="segunda generacion" />
 					<p>
 						Pensamos en cada detalle para que la protección de tu bici sea más óptima, WrapiK® tiene un desarrollo de materiales y diseño que hacen de
 						esta protección un elemento infaltable cuando quieras proteger el frente del cuadro, suspenciones y tijera.
 					</p>
 					<br />
 					<p>Dos versiones de Wrap para proteger.</p>
+					<div style="margin-top: 3rem" class="grid-container">
+						<div class="left">
+							<a style="text-align: center" href="#section3"><img src="./assets/logo_base.svg" alt="base" /> </a>
+							<br />
+							<br />
+							<br />
+							<br />
+							<br />
+							<div class="mt-4">
+								<ul>
+									<li>Suspenciones</li>
+									<li>Botellas</li>
+								</ul>
+							</div>
+						</div>
+						<div class="right">
+							<a style="text-align: center" href="#section4">
+								<img src="./assets/logo_plus.svg" alt="base" />
+							</a>
+							<br />
+							<br />
+
+							<div class="mt-4">
+								<ul>
+									<li>Marco frontal</li>
+									<li>Tijera</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -237,43 +315,35 @@
 		<div class="dark text-white">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col border border-light d-flex center column p-5">
-						<div class="colors colors__1 mb-2"></div>
-						<p class="mb-0 color">Color</p>
-						<p class="number">01</p>
+					<div class="col-lg-3 col-sm-12 border border-light d-flex center column p-0">
+						<img class="w-100" src="/assets/Color_1.jpg" alt="color1" />
 					</div>
-					<div class="col border border-light d-flex center column p-5">
-						<div class="colors colors__2 mb-2"></div>
-						<p class="mb-0 color">Color</p>
-						<p class="number">02</p>
+					<div class="col-lg-3 col-sm-12 border border-light d-flex center column p-0">
+						<img class="w-100" src="/assets/Color_2.jpg" alt="color2" />
 					</div>
-					<div class="col border border-light d-flex center column p-5">
-						<div class="colors colors__3 mb-2"></div>
-						<p class="mb-0 color">Color</p>
-						<p class="number">03</p>
+					<div class="col-lg-3 col-sm-12 border border-light d-flex center column p-0">
+						<img class="w-100" src="/assets/Color_3.jpg" alt="color3" />
 					</div>
-					<div class="col border border-light d-flex center column p-5">
-						<div class="colors colors__4 mb-2"></div>
-						<p class="mb-0 color">Color</p>
-						<p class="number">04</p>
+					<div class="col-lg-3 col-sm-12 border border-light d-flex center column p-0">
+						<img class="w-100" src="/assets/Color_4.jpg" alt="color4" />
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="dark text-white footer desktop">
+		<div class="dark text-white footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-2 d-flex footer__col1">
+					<div class="col col-lg-2 col-sm-5 d-flex footer__col1">
 						<img src="./assets/logo_footer.svg" alt="logo" />
 						<div class="footerhash">
 							<span>#</span>
-							<p>Hot line</p>
+							<p>Hard line</p>
 							<p>ever fella</p>
 						</div>
 					</div>
-					<div class="col-8 border-botom"></div>
-					<div class="col-2"><img src="./assets/footer_brand.png" alt="footer-image" /></div>
+					<div class="col col-lg-8 col-sm-3 border-botom"></div>
+					<div class="col col-lg-2 col-sm-4"><img src="./assets/footer_brand.png" alt="footer-image" /></div>
 				</div>
 			</div>
 		</div>
