@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		focus: 'center',
 		autoplay: false,
 		updateOnMove: true,
+		autoWidth: true,
+		cover: true,
 		pagination: true,
 		padding: '0%',
 		perPage: 1,

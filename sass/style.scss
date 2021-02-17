@@ -338,10 +338,9 @@ li {
 .second {
 	background-image: url(../assets/content_1.crop.png);
 	min-height: 100vh;
-	background-size: auto;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
-	clip-path: polygon(52% 0, 100% 0, 100% 100%, 35% 100%);
 	position: relative;
 
 	@include media(tablet) {
@@ -350,23 +349,25 @@ li {
 		min-height: initial;
 	}
 
-	@include media(4k) {
-		background-size: contain;
+	@include media(mediapc) {
+		clip-path: polygon(52% 0, 100% 0, 100% 100%, 35% 100%);
+		max-width: 90%;
+		margin-left: auto;
 	}
 
 	&__ride {
-		background-image: url(../assets/Polyvalence.jpg);
-		clip-path: polygon(59% 0, 100% 0, 100% 100%, 40% 100%);
-		background-size: auto;
+		background-image: url(../assets/content_3.crop.png);
+		background-size: contain;
 		background-position: right;
 		min-height: 100vh;
 
 		@include media(tablet) {
 			background-size: cover;
+			background-image: url(../assets/Polyvalence.jpg);
 		}
 
-		@include media(4k) {
-			background-size: contain;
+		@include media(mediapc) {
+			clip-path: polygon(59% 0, 100% 0, 100% 100%, 40% 100%);
 		}
 	}
 
@@ -377,18 +378,23 @@ li {
 }
 
 .third {
-	background-image: url(../assets/dual_function.jpg);
+	background-image: url(../assets/content_2.crop.png);
 	background-position: center;
 	min-height: 55vh;
 	width: 100%;
-	background-size: contain;
 	background-repeat: no-repeat;
-	clip-path: polygon(0 0, 50% 0, 55% 100%, 0 100%);
 	position: relative;
 	background-position-x: left;
+	background-size: contain;
+
+	@include media(mediapc) {
+		max-width: 90%;
+		clip-path: polygon(0 0, 50% 0, 55% 100%, 0 100%);
+	}
 
 	@include media(tablet) {
 		background-size: cover;
+		background-image: url(../assets/dual_function.jpg);
 	}
 
 	&__ride {
@@ -400,12 +406,12 @@ li {
 	}
 
 	&__zero {
-		background-image: url(../assets/content_4.jpg);
 		min-height: 66vh;
-		clip-path: polygon(0% 0%, 41% 0%, 49% 100%, 0% 100%);
-		background-size: contain;
+		// background-size: contain;
+		background-image: url(../assets/content_4.crop.png);
 
 		@include media(tablet) {
+			background-image: url(../assets/content_4.jpg);
 			min-height: auto;
 			clip-path: none;
 			background-size: cover;
